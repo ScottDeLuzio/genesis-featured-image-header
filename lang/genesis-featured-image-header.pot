@@ -1,0 +1,266 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Genesis Featured Image Header\n"
+"POT-Creation-Date: 2015-10-02 15:38-0700\n"
+"PO-Revision-Date: 2015-10-02 15:26-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: genesis-featured-image-header.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: genesis-featured-image-header.php:74
+msgid "Featured Image"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: genesis-featured-image-header.php:76
+msgid "Genesis Featured Image Header"
+msgstr ""
+
+#: genesis-featured-image-header.php:76
+msgid "Featured Images"
+msgstr ""
+
+#: genesis-featured-image-header.php:130 genesis-featured-image-header.php:158
+msgid "Settings saved."
+msgstr ""
+
+#: genesis-featured-image-header.php:135
+msgid "Choose Image for"
+msgstr ""
+
+#: genesis-featured-image-header.php:135
+msgid "Archive Page"
+msgstr ""
+
+#: genesis-featured-image-header.php:144
+msgid "Current Image:"
+msgstr ""
+
+#: genesis-featured-image-header.php:162
+msgid "Genesis Featured Image Header Settings and Help"
+msgstr ""
+
+#: genesis-featured-image-header.php:166
+msgid ""
+"This plugin will allow you to insert an image on any Custom Post Type "
+"archive page you have on your site. Do you want it to also insert a featured "
+"image on regular WordPress pages, posts, archives, etc.?"
+msgstr ""
+
+#: genesis-featured-image-header.php:167
+msgid "Check to use on pages also:"
+msgstr ""
+
+#: genesis-featured-image-header.php:168
+msgid ""
+"Choose where you would like to have your featured image positioned on your "
+"pages. The setting you choose here will move all of the images set by this "
+"plugin to the location selected."
+msgstr ""
+
+#: genesis-featured-image-header.php:180
+msgid "Need Help?"
+msgstr ""
+
+#: genesis-featured-image-header.php:181
+msgid "How do I set the featured image on a custom post type archive page?"
+msgstr ""
+
+#: genesis-featured-image-header.php:182
+msgid ""
+"If your custom post type is called \"Books\", you can navigate to the Books "
+"> Featured Image page on the admin menu. Once there, you can use the upload "
+"button to upload a new image or select an existing image from your site's "
+"Media Library."
+msgstr ""
+
+#: genesis-featured-image-header.php:183
+msgid "How do I unset the archive page image?"
+msgstr ""
+
+#: genesis-featured-image-header.php:184
+msgid ""
+"Simply follow the steps above, but instead of clicking the upload image "
+"button simply delete the URL in the text box and click save changes."
+msgstr ""
+
+#: genesis-featured-image-header.php:185
+msgid "Can I use this with WooCommerce?"
+msgstr ""
+
+#: genesis-featured-image-header.php:186
+msgid ""
+"Yes, however you can only set one image for all WooCommerce pages (store, "
+"individual product pages, product category pages, and product tag pages). "
+"This is done by navigating to Products > Featured Image in your admin "
+"section. The cart and checkout pages are regular WordPress pages, and can "
+"have different images from the rest of the store if you want."
+msgstr ""
+
+#: genesis-featured-image-header.php:187
+msgid "How do I set a featured image for individual pages?"
+msgstr ""
+
+#: genesis-featured-image-header.php:188
+msgid ""
+"First, make sure the checkbox above on this page is checked and that you "
+"clicked Save Changes. Then on the page edit screen, simply click the Set "
+"Featured Image link. If you do not see this option, click Screen Options at "
+"the top of the page and check the box next to Featured Image. If you do not "
+"want to have a featured image on a certain page, simply do not add one and "
+"nothing will show up."
+msgstr ""
+
+#: genesis-featured-image-header.php:189
+msgid ""
+"My pages already show the featured image someplace else now it is showing "
+"twice. How can I get rid of that?"
+msgstr ""
+
+#: genesis-featured-image-header.php:190
+msgid ""
+"If you already have a featured image but this plugin is making it show up in "
+"another location, simply uncheck the box above and your pages will no longer "
+"use this plugin's settings. You can still continue to use the plugin for "
+"custom post type archives."
+msgstr ""
+
+#: genesis-featured-image-header.php:191
+msgid "Is there a \"global\" featured image setting?"
+msgstr ""
+
+#: genesis-featured-image-header.php:192
+msgid ""
+"No. This plugin is designed to allow you to set a different image for each "
+"page and custom post type archive. If you want the same image for each page, "
+"you can still use this plugin. Simply use the same image for each page. If "
+"you have too many pages to set manually, you may want to look into adding "
+"the image another way."
+msgstr ""
+
+#: genesis-featured-image-header.php:193
+msgid "I need help identifying the featured image locations."
+msgstr ""
+
+#: genesis-featured-image-header.php:194
+msgid ""
+"The locations in the dropdown menu above are more or less in a top to bottom "
+"order (some locations are next to each other). If you are working on a site "
+"that is not live, you could simply try out the different locations to see "
+"where they will show up on your site. There are also some great guides "
+"available that will help you identify where these locations are on your "
+"site. One is the "
+msgstr ""
+
+#: genesis-featured-image-header.php:194
+msgid "StudioPress Hook Reference guide"
+msgstr ""
+
+#: genesis-featured-image-header.php:194
+msgid " (for StudioPress customers only). Another reference is the "
+msgstr ""
+
+#: genesis-featured-image-header.php:194
+msgid "Visual Hook Guide from Genesis Tutorials."
+msgstr ""
+
+#: genesis-featured-image-header.php:194
+msgid ""
+"This tutorial helps you visualize where the image will show up. If you want "
+"to see the same visualization on your own site, check out the"
+msgstr ""
+
+#: genesis-featured-image-header.php:194
+msgid "Genesis Visual Hook Guide Plugin."
+msgstr ""
+
+#: genesis-featured-image-header.php:195
+msgid "What are the dimensions of the images I should be using?"
+msgstr ""
+
+#: genesis-featured-image-header.php:196
+msgid ""
+"This will depend on a few factors. Each theme may have slightly larger or "
+"smaller widths or heights for each location where your image will show up. "
+"This answer will vary based on each different Genesis child theme. Also, "
+"each location that you can choose from to insert your image has different "
+"dimensions. So not only will the answer vary based on the theme you are "
+"using, it will also vary depending on the location where you are inserting "
+"the image. The plugin will insert the full size image that you upload (no "
+"cropping is done). If you want exact dimensions, check out the Genesis "
+"Visual Hook Guide Plugin (see link above). When viewing the page use the "
+"Action Hooks option then right click the area you want to get the width for "
+"and click \"Inspect Element\". In many browsers this will pop up the "
+"dimensions of the area you are looking at."
+msgstr ""
+
+#: genesis-featured-image-header.php:197
+msgid ""
+"The featured image is not showing up correctly or at all. What can I do?"
+msgstr ""
+
+#: genesis-featured-image-header.php:198
+msgid ""
+"This plugin is set to show an image on the following post types: custom post "
+"type archive pages, regular WordPress pages, regular WordPress posts, and "
+"WooCommerce shop pages. Some plugins may use different templates or methods "
+"for calling their pages so this plugin may not work on all pages. Please let "
+"us know of any pages that are not working correctly in the WordPress support "
+"forum."
+msgstr ""
+
+#: lib/gfih.php:36
+msgid "Sorry, Genesis Featured Image Header works only with the"
+msgstr ""
+
+#: lib/gfih.php:36
+msgid "Genesis Framework"
+msgstr ""
+
+#: lib/gfih.php:36
+msgid "It has been deactivated."
+msgstr ""
+
+#: lib/gfih.php:36
+msgid "New to Genesis? Check out the "
+msgstr ""
+
+#: lib/gfih.php:36
+msgid "Theme of the Month"
+msgstr ""
+
+#: lib/gfih.php:51
+msgid "This plugin requires WordPress version 3.5 of higher."
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://surpriseazwebservices.com/plugins/genesis-featured-image-header/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Easily add a featured image to the header of every page on your site "
+"including Custom Post Type archive pages."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Scott DeLuzio"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://surpriseazwebservices.com"
+msgstr ""
