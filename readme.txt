@@ -3,7 +3,7 @@ Contributors: scott.deluzio
 Tags: genesis, featured image, header, custom post type
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CSWJFA3B587U6
 Requires at least: 3.5
-Tested up to: 5.0.3
+Tested up to: 5.2.0
 Stable tag: 1.2.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
