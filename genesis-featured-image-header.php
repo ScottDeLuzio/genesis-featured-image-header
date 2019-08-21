@@ -17,7 +17,8 @@ if ( !defined( 'ABSPATH' ) ) {
 --------------------------------------------- */
 function gfih_require() {
 	$files = array(
-		'gfih'
+		'gfih',
+		'amplify'
 	); //array for future use
 
 	foreach( $files as $file ) {
