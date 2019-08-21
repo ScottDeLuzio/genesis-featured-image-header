@@ -3,8 +3,8 @@ Contributors: scott.deluzio
 Tags: genesis, featured image, header, custom post type
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CSWJFA3B587U6
 Requires at least: 3.5
-Tested up to: 5.2.0
-Stable tag: 1.2.9
+Tested up to: 5.2.2
+Stable tag: 1.2.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,19 @@ No. This plugin is designed to allow you to set a different image for each page 
 
 The locations in the dropdown menu above are more or less in a top to bottom order (some locations are next to each other). If you are working on a site that is not live, you could simply try out the different locations to see where they will show up on your site. There are also some great guides available that will help you identify where these locations are on your site. One is the [StudioPress Hook Reference guide](https://my.studiopress.com/docs/hook-reference/) (for StudioPress customers only). Another reference is the [Visual Hook Guide from Genesis Tutorials](http://genesistutorials.com/visual-hook-guide/). This tutorial helps you visualize where the image will show up. If you want to see the same visualization on your own site, check out the [Genesis Visual Hook Guide Plugin](https://wordpress.org/plugins/genesis-visual-hook-guide/).
 
+= My theme has a custom action where I want the featured image to be displayed. =
+
+You can filter the array of locations in the plugin's settings with the `gfih_location_options` filter to add your location. You would need to merge your location in as an array with the key being the action name, and the value being the human readable format.
+
+```add_filter( 'gfih_location_options', 'my_custom_function' );
+function my_custom_function( $genesis_actions ){
+	$my_location = array(
+		'my_custom_action'	=> 'My custom action name'
+	);
+	return array_merge( $genesis_actions, $my_location );
+}
+```
+
 = What are the dimensions of the images I should be using? =
 
 This will depend on a few factors. Each theme may have slightly larger or smaller widths or heights for each location where your image will show up. This answer will vary based on each different Genesis child theme. Also, each location that you can choose from to insert your image has different dimensions. So not only will the answer vary based on the theme you are using, it will also vary depending on the location where you are inserting the image. The plugin will insert the full size image that you upload (no cropping is done). If you want exact dimensions, check out the Genesis Visual Hook Guide Plugin (see link above). When viewing the page use the Action Hooks option then right click the area you want to get the width for and click "Inspect Element". In many browsers this will pop up the dimensions of the area you are looking at.
@@ -73,6 +86,10 @@ This plugin is set to show an image on the following post types: custom post typ
 5. For custom post type archive pages, find the "Featured Image" link in the archive's menu. Use the Upload Image button to upload a new image or to select a previously uploaded image. Click the save changes button to save your settings.
 
 == Changelog ==
+= 1.2.10 =
+* Fix: Dropdown menu of Genesis actions was not loading correctly after update to Genesis 3.1
+* New: Added a filter to allow for additional actions to be added to the setting menu. `gfih_location_options`
+
 = 1.2.9 =
 * Fix: Conditional statement checking for WooCommerce pages was incorrect.
 * Update: Bumped tested up to version.
@@ -113,6 +130,6 @@ Bug Fixes:
 * Initial release.
 
 == Upgrade Notice ==
-= 1.2.9 =
-* Fix: Conditional statement checking for WooCommerce pages was incorrect.
-* Update: Bumped tested up to version.
+= 1.2.10 =
+* Fix: Dropdown menu of Genesis actions was not loading correctly after update to Genesis 3.1
+* New: Added a filter to allow for additional actions to be added to the setting menu. `gfih_location_options`

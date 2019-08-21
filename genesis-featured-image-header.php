@@ -3,7 +3,7 @@
 Plugin Name: Genesis Featured Image Header
 Plugin URI: https://amplifyplugins.com/
 Description: Easily add a featured image to the header of every page on your site including Custom Post Type archive pages.
-Version: 1.2.9
+Version: 1.2.10
 Author: Scott DeLuzio
 Author URI: https://scottdeluzio.com
 Text Domain: genesis-featured-image-header
@@ -250,8 +250,47 @@ function gfih_cpt_featured_image_settings() {
 // Create main settings page
 function gfih_main_settings() {
 	//Create array of location options
-	$a = array( 'genesis_before','genesis_before_header','genesis_header','genesis_before_site_title','genesis_site_title','genesis_after_site_title','genesis_site_description','genesis_header_right','genesis_after_header','genesis_before_content_sidebar_wrap','genesis_before_content','genesis_before_loop','genesis_loop','genesis_before_post','genesis_before_post_title','genesis_post_title','genesis_after_post_title','genesis_before_post_content','genesis_post_content','genesis_after_post_content','genesis_after_post','genesis_after_sidebar_widget_area','genesis_after_sidebar_alt_widget_area','genesis_before_sidebar_widget_area','genesis_before_sidebar_alt_widget_area','genesis_before_entry','genesis_entry_header','genesis_entry_content','genesis_entry_footer','genesis_after_entry','genesis_after_endwhile','genesis_after_loop','genesis_after_content','genesis_after_content_sidebar_wrap','genesis_before_footer','genesis_footer','genesis_after_footer','genesis_after' );
-	$b = array( 'Before Content','Before Header','Inside Header','Before Site Title','Site Title Area','After Site Title','Site Description Area','Right Side of Header','After Header','Before Content and Sidebar','Before Content Column','Before Content in Loop','Loop','Before Post','Before Post Title','Post Title','After Post Title','Before Post Content','Post Content','After Post Content','After Post','After Sidebar Widget Area','After Sidebar Alt Widget Area','Before Primary Sidebar Widget Area','Before Sidebar Alt Widget Area','Before Entry','Entry Header','Entry Content','Entry Footer','After Entry','After Endwhile','After Content in Loop','After Content','After Primary Sidebar Widget Area','Before Footer','Inside Footer','After Footer','After Full Page' );
+	$genesis_actions = array(
+		'genesis_before'							=> 'Before Content',
+		'genesis_before_header'						=> 'Before Header',
+		'genesis_header'							=> 'Inside Header',
+		'genesis_before_site_title'					=> 'Before Site Title',
+		'genesis_site_title'						=> 'Site Title Area',
+		'genesis_after_site_title'					=> 'After Site Title',
+		'genesis_site_description'					=> 'Site Description Area',
+		'genesis_header_right'						=> 'Right Side of Header',
+		'genesis_after_header'						=> 'After Header',
+		'genesis_before_content_sidebar_wrap'		=> 'Before Content and Sidebar',
+		'genesis_before_content'					=> 'Before Content Column',
+		'genesis_before_loop'						=> 'Before Content in Loop',
+		'genesis_loop'								=> 'Loop',
+		'genesis_before_post'						=> 'Before Post',
+		'genesis_before_post_title'					=> 'Before Post Title',
+		'genesis_post_title'						=> 'Post Title',
+		'genesis_after_post_title'					=> 'After Post Title',
+		'genesis_before_post_content'				=> 'Before Post Content',
+		'genesis_post_content'						=> 'Post Content',
+		'genesis_after_post_content'				=> 'After Post Content',
+		'genesis_after_post'						=> 'After Post',
+		'genesis_after_sidebar_widget_area'			=> 'After Sidebar Widget Area',
+		'genesis_after_sidebar_alt_widget_area'		=> 'After Sidebar Alt Widget Area',
+		'genesis_before_sidebar_widget_area'		=> 'Before Primary Sidebar Widget Area',
+		'genesis_before_sidebar_alt_widget_area'	=> 'Before Sidebar Alt Widget Area',
+		'genesis_before_entry'						=> 'Before Entry',
+		'genesis_entry_header'						=> 'Entry Header',
+		'genesis_entry_content'						=> 'Entry Content',
+		'genesis_entry_footer'						=> 'Entry Footer',
+		'genesis_after_entry'						=> 'After Entry',
+		'genesis_after_endwhile'					=> 'After Endwhile',
+		'genesis_after_loop'						=> 'After Content in Loop',
+		'genesis_after_content'						=> 'After Content',
+		'genesis_after_content_sidebar_wrap'		=> 'After Primary Sidebar Widget Area',
+		'genesis_before_footer'						=> 'Before Footer',
+		'genesis_footer'							=> 'Inside Footer',
+		'genesis_after_footer'						=> 'After Footer',
+		'genesis_after'								=> 'After Full Page',
+	);
+	apply_filters( 'gfih_location_options', $genesis_actions );
 	?>
 	<div class="wrap">
 		<?php if( isset( $_GET['settings-updated'] ) ) { ?>
@@ -272,9 +311,9 @@ function gfih_main_settings() {
 			<p><?php _e( 'Choose where you would like to have your featured image positioned on your pages. The setting you choose here will move all of the images set by this plugin to the location selected.', 'genesis-featured-image-header' ); ?></p>
 			<p>
 				<select name="gfih_action_location">
-					<?php foreach ( $a as $index => $v ) {
-						if ( function_exists( $v ) ) { ?>
-							<option value="<?php echo $v; ?>" <?php if ( get_option( 'gfih_action_location' ) == $v ) { echo 'selected'; } ?>><?php echo $b[$index]; ?> (<?php echo $v; ?>)</option>
+					<?php foreach ( $genesis_actions as $action => $value ) {
+						if ( has_action( $action ) ) { ?>
+							<option value="<?php echo $action; ?>" <?php if ( get_option( 'gfih_action_location' ) == $action ) { echo 'selected'; } ?>><?php echo $value; ?> (<?php echo $action; ?>)</option>
 						<?php }
 					} ?>
 				</select>
