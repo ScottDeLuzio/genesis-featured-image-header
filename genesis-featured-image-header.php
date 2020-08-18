@@ -3,7 +3,7 @@
 Plugin Name: Genesis Featured Image Header
 Plugin URI: https://amplifyplugins.com/
 Description: Easily add a featured image to the header of every page on your site including Custom Post Type archive pages.
-Version: 1.2.10
+Version: 1.2.11
 Author: Scott DeLuzio
 Author URI: https://scottdeluzio.com
 Text Domain: genesis-featured-image-header

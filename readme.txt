@@ -3,8 +3,8 @@ Contributors: scott.deluzio
 Tags: genesis, featured image, header, custom post type
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CSWJFA3B587U6
 Requires at least: 3.5
-Tested up to: 5.2.2
-Stable tag: 1.2.10
+Tested up to: 5.5.0
+Stable tag: 1.2.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -86,6 +86,9 @@ This plugin is set to show an image on the following post types: custom post typ
 5. For custom post type archive pages, find the "Featured Image" link in the archive's menu. Use the Upload Image button to upload a new image or to select a previously uploaded image. Click the save changes button to save your settings.
 
 == Changelog ==
+= 1.2.11 =
+* Updated tested up to version.
+
 = 1.2.10 =
 * Fix: Dropdown menu of Genesis actions was not loading correctly after update to Genesis 3.1
 * New: Added a filter to allow for additional actions to be added to the setting menu. `gfih_location_options`
@@ -130,6 +133,5 @@ Bug Fixes:
 * Initial release.
 
 == Upgrade Notice ==
-= 1.2.10 =
-* Fix: Dropdown menu of Genesis actions was not loading correctly after update to Genesis 3.1
-* New: Added a filter to allow for additional actions to be added to the setting menu. `gfih_location_options`
+= 1.2.11 =
+* Updated tested up to version.
